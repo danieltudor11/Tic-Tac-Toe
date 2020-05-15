@@ -46,7 +46,7 @@ class Board extends React.Component {
 		const over = isGameOver(this.state.squares);
 		let status;
 		if (winner) {
-			status = 'Winner: ' + winner;
+			status = winner + " wins!";
 		}
 		else if (over) {
 			status = "It's a Tie!";
